@@ -12,7 +12,7 @@
       <div class="calculator">
         <input type="text" placeholder="0" id="output-screen" />
         <button onclick="clear()">DEL</button>
-        <button onclick="del()">DEL</button>
+        <button onclick="del()">CLEAR</button>
         <button onclick="display('%')">%</button>
         <button onclick="display('/')">/</button>
         <button onclick="display('7')">7</button>
@@ -45,9 +45,9 @@
           alert("Invalid operation performed");
         }
       }
-      let zero = 0;
+     
       function clear() {
-        outputScreen.value = zero;
+        outputScreen.value = "0";
       }
       function del() {
         outputScreen.value = outputScreen.value.slice(0, -1);
