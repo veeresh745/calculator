@@ -47,7 +47,7 @@
       }
       let zero = 0;
       function clear() {
-        outputScreen.value = zero;
+        outputScreen.value = outputScreen.value.slice(0, -1);
       }
       function del() {
         outputScreen.value = outputScreen.value.slice(0, -1);
